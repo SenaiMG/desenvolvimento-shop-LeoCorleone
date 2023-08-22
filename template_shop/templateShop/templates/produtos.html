@@ -1,0 +1,143 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <!--Navbar-->        
+    {% include 'partials/navbar.html' %}
+
+    {% include 'partials/carousel.html' %}
+
+    <!-- PRODUTOS -->
+    <div class="container-md" style="border-top: 20px; padding-top: 20px;">
+        <div class="container text-center">
+            <h1>ÚLTIMAS NOVIDADES</h1>
+            <div class="row">
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/1.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/2.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/3.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center" style="border-top: 20px; padding-top: 20px;">
+            <div class="row">
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/4.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/5.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                    <img src="{% static 'assets/img/6.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                    <div>
+                        <h5>R$120,00</h5>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container-md" style="border-top: 20px; padding-top: 20px;">
+      <div class="container text-center">
+          <h1>COLEÇÃO DE CAMISAS</h1>
+          <div class="row">
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/1.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/2.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/3.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center" style="border-top: 20px; padding-top: 20px;">
+          <div class="row">
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/4.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/5.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center">
+                  <img src="{% static 'assets/img/6.jpg' %}" class="rounded" alt="..." style="height: 400px; width: 300px; padding-bottom: 20px;">
+                  <div>
+                      <h5>R$120,00</h5>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+    {% include 'partials/footer.html' %}
+{% endblock %}

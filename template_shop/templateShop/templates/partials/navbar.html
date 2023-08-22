@@ -1,0 +1,108 @@
+{% load static %}
+<header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TemplateShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'index' %}"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
+            </li>
+            <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="{% url 'produtos' %}">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'carrinho' %}">
+                  <img src="{% static 'assets/img/carrinho.png' %}" alt="carrinho">
+                </a></li>
+            </ul>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquise Produtos" aria-label="Search">
+            <button class="btn btn-outline-success me-4" type="submit">Pesquisar</button>
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Entrar</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+<main>
+  <div class="b-example-divider text-bg-dark py-2" style="opacity: 50%;"></div>
+  <!--Modal Login-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Usuário</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" placeholder="example@email.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div id="emailHelp" class="form-text">Esqueceu sua senha? <a href="#" style="color:blue;">Clique aqui</a> </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembrar login</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"> <img width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"> Entrar com Google</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entrar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--Modal Registrar-->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel2">Registrar Usuário</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" placeholder="example@email.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirmar Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-1 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembrar login</label>
+              </div>
+              <div class="mb-1 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Aceitar os <a href="#" style="color: blue;">Termos de Uso</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"> <img width="24" height="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"> Entrar com Google</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Registrar</button>
+          </div>
+        </div>
+      </div>
+  </div>
