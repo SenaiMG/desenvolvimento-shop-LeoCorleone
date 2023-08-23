@@ -5,5 +5,5 @@ class Cliente(models.Model):
     senha_cliente = models.CharField(max_length=100)
 
 class Imagens(models.Model):
-    camisa_venda = models.ImageField
+    camisa_venda = models.ImageField(upload_to='static/assets/img')
     
