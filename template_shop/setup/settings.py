@@ -129,7 +129,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'setup/static')
 ]
 
+# Adicionando imagens ao html
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') 
+MEDIA_URL = '/media/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

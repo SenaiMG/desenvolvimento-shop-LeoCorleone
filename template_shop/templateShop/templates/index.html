@@ -138,6 +138,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Adicionar</button>
+     </form>
     </div>
 
 

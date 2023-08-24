@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import Foto_form
 
 def index(request):
     return render(request, 'index.html')
@@ -8,3 +9,8 @@ def carrinho(request):
 
 def produtos(request):
     return render(request, 'produtos.html')
+
+def adicionar(request):
+    form = Foto_form(request.FILES)
+    context = {'form': form}
+    return render(request, 'index.html')
