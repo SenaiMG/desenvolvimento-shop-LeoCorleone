@@ -138,12 +138,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Adicionar</button>
-     </form>
+      <button type="submit"><a href="{% url 'adicionar' %}"></a> Adicionar</button>
     </div>
+<!-- teste -->
+    <!-- <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }} -->
 
 
     <div class="container-md" style="padding-top: 40px; border-top: 40px;">

@@ -11,6 +11,9 @@ def produtos(request):
     return render(request, 'produtos.html')
 
 def adicionar(request):
-    form = Foto_form(request)
-    context = {'form': form}
-    return render(request, 'index.html', context)
+    form = Foto_form()
+    if form.is_valid():
+            form.save()
+            return redirect('adicionar.html')
+    else:
+        return
