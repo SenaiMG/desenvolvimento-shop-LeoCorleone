@@ -11,6 +11,6 @@ def produtos(request):
     return render(request, 'produtos.html')
 
 def adicionar(request):
-    form = Foto_form(request.FILES)
+    form = Foto_form(request)
     context = {'form': form}
-    return render(request, 'index.html')
+    return render(request, 'index.html', context)
